@@ -8,4 +8,13 @@ test("findLongestString finds the longest string in an array", () => {
 
 test("findLongestString returns the earlier string in cases of joint longest strings", () => {
   expect(findLongestString(["brave", "dance"])).toBe("brave");
+  expect(
+    findLongestString(["one", "two", "three", "four", "five", "six", "seven"])
+  ).toBe("three");
+  expect(findLongestString(["a", "aa", "a a", "bbb", "bb", "b"])).toBe("a a");
+});
+test("findShortestString returns the shortest string in an array.", () => {
+  expect(findShortestString(["it", "is", "a", "nice", "day"])).toBe("a");
+  expect(findShortestString(["why", "hello", "to", "you"])).toBe("to");
+  expect(findLongestString(["brave", "dance"])).toBe(brave);
 });
